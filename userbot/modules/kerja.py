@@ -9,7 +9,7 @@ from userbot.events import register
 async def typewriter(typew):
 	message = typew.pattern_match.group(0)
 	sleep(0)
-	await typew.edit("**PRICE LIST** **LAZARUZ STORE**\n"
+	await typew.edit("**PRICE LISTT** **LAZARUZ STORE**\n"
 			 f"━━━━━━━━━━━━━━━━━━━━━━━━\n"
 			 f"WEB P SUBDOMAIN PREMIUM\n"
 			 f"\n"
