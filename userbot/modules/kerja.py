@@ -110,7 +110,7 @@ async def typewriter(typew):
 	sleep(0)
 	await typew.edit("`Tampilan cek di :` @DemoScript")
 	
-@register(outgoing=True, pattern='^.proses(?: |$)(.*)')
+@register(outgoing=True, pattern='^.proses2(?: |$)(.*)')
 async def typewriter(typew):
 	message = typew.pattern_match.group(0)
 	sleep(0)
