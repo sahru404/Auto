@@ -136,6 +136,12 @@ async def typewriter(typew):
 	await typew.edit("Mohon Maaf, Untuk sekarang result live **FULL** \n"
 			 f"Info Lebih Lanjut! [klik disini](http://t.me/LazaruzStore)")
 
+@register(outgoing=True, pattern='^.proses(?: |$)(.*)')
+async def typewriter(typew):
+	message = typew.pattern_match.group(0)
+	sleep(0)
+	await typew.edit("Di proses ya, Mohon bersabar \n"
+			 f"Kunjungi Channelku! [klik disini](http://t.me/LazaruzStore)")
 
 @register(outgoing=True, pattern='^.jual(?: |$)(.*)')
 async def typewriter(typew):
