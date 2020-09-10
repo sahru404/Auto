@@ -37,7 +37,7 @@ async def typewriter(typew):
 			 f"PM @Lazaruzs")
 
 
-@register(outgoing=True, pattern='^.unredflag(?: |$)(.*)')
+@register(outgoing=True, pattern='^.rf(?: |$)(.*)')
 async def typewriter(typew):
 	message = typew.pattern_match.group(0)
 	sleep(0)
@@ -295,7 +295,7 @@ async def typewriter(typew):
 async def typewriter(typew):
 	message = typew.pattern_match.group(0)
 	sleep(0)
-	await typew.edit("**EXP TIME !!** \nMaaf bos, phising saya matikan atau saya alihkan ke `lazahost.net` \nDikarenakan Sudah melewati tanggal kadaluarsa \nDan jika mau perpanjang silahkan balas pesan ini  \n Dan jika tidak ingin perpanjang abaikan pesan ini \nBot By : [#LazaBot](t.me/Lazaruzs)")
+	await typew.edit("**EXP TIME !!** \nMaaf bosku, phising saya matikan atau saya alihkan ke `lazahost.com` \nDikarenakan Sudah melewati tanggal kadaluarsa \nDan jika mau perpanjang silahkan balas pesan ini  \n Dan jika tidak ingin perpanjang abaikan pesan ini \nBot By : [#LazaBot](t.me/Lazaruzs)")
 
 
 # Create by myself @JejakCheat
