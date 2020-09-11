@@ -154,9 +154,9 @@ async def approvepm(apprvpm):
     try:
         approve(uid)
     except IntegrityError:
-        return await apprvpm.edit("`User ini mungkin sudah di tag dalam transaksi.`")
+        return await apprvpm.edit("`User ini masih dalam transaksi.`")
 
-    await apprvpm.edit(f"`Sedang Melakukan Proses Transaksi Dengan `[{name0}](tg://user?id={uid})")
+    await apprvpm.edit(f"`Oke sudah diterima, kita mulai proses transaksi sekarang ya`[{name0}](tg://user?id={uid})")
 
     async for message in apprvpm.client.iter_messages(apprvpm.chat_id,
                                                       from_user='me',
@@ -166,7 +166,7 @@ async def approvepm(apprvpm):
     if BOTLOG:
         await apprvpm.client.send_message(
             BOTLOG_CHATID,
-            "#SedangTransaksi\n" + "Dengan User: " + f"[{name0}](tg://user?id={uid})",
+            "#SedangProsesTransaksi\n" + "Dengan User: " + f"[{name0}](tg://user?id={uid})",
         )
 
 
@@ -189,11 +189,11 @@ async def disapprovepm(disapprvpm):
         name0 = str(aname.first_name)
 
     await disapprvpm.edit(
-        f"`Telah Selesai Melakukan Transaksi Dengan` [{name0}](tg://user?id={disapprvpm.chat_id})")
+        f"`Terimakasih Transaksi sudah selesai dengan` [{name0}](tg://user?id={disapprvpm.chat_id})")
 
     if BOTLOG:
         await disapprvpm.client.send_message(
             BOTLOG_CHATID,
             f"#TransaksiSelesai\n\n[{name0}](tg://user?id={disapprvpm.chat_id})"
-            " Telah Selesai Melakukan Transaksi.",
+            " Telah Selesai Melakukan Transaksi dengan @LazaruzStore Terimakasih.",
         )
