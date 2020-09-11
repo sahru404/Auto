@@ -20,7 +20,34 @@ from userbot import (AFKREASON, COUNT_MSG, CMD_HELP, ISAFK, BOTLOG,
                      BOTLOG_CHATID, USERS, PM_AUTO_BAN, bot, ALIVE_NAME, is_redis_alive)
 from userbot.events import register
 
+# ========================= CONSTANTS ============================
+AFKSTR = [
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+    "`#LAZABOT`",
+]
 
+# ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 AFKSK = str(choice(AFKSTR))
 # ============================================
@@ -158,19 +185,19 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)}s`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"Saya sudah offline **sejak** **{afk_since}** yang lalu.\
+                    await mention.reply(f"Saya sudah offline sejak {afk_since} yang lalu.\
                             \n**Karena** `{AFKREASON}`")
                 else:
-                    await mention.reply(f"Saya sudah offline **sejak** **{afk_since}** yang lalu.\nand Tinggalkan pesan saja ya nanti di balas: \n{AFKSK}\n`.` ")
+                    await mention.reply(f"Saya sudah offline sejak {afk_since} yang lalu.\nand Tinggalkan pesan saja ya nanti di balas: \n{AFKSK}\n`.` ")
                 USERS.update({mention.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply(f"Saya sudah offline **sejak** **{afk_since}** yang lalu.\
+                        await mention.reply(f"Saya sudah offline sejak {afk_since} yang lalu.\
                             \n**Karena saya sedang** `{AFKREASON}`")
                     else:
-                        await mention.reply(f"Saya sudah offline **sejak** **{afk_since}** yang lalu.\n Tinggalkan pesan aja ya nanti di balas: \n{AFKSK}\n`.` ")
+                        await mention.reply(f"Saya sudah offline sejak {afk_since} yang lalu.\nand Tinggalkan pesan aja ya nanti di balas: \n{AFKSK}\n`.` ")
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
                 else:
@@ -235,19 +262,19 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)}s`"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(f"Saya sudah offline **sejak** **{afk_since}** yang lalu.\
+                    await sender.reply(f"Saya sudah offline sejak {afk_since} yang lalu.\
                         \n**Karena saya sedang** `{AFKREASON}`")
                 else:
-                    await sender.reply(f"Saya sudah offline **sejak** **{afk_since}** yang lalu.\nand Tinggalkan pesan aja ya nanti di balas: \n{AFKSK}\n`.` ")
+                    await sender.reply(f"Saya sudah offline sejak {afk_since} yang lalu.\nand Tinggalkan pesan aja ya nanti di balas: \n{AFKSK}\n`.` ")
                 USERS.update({sender.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(f"Saya sudah offline **sejak** **{afk_since}** yang lalu.\
+                        await sender.reply(f"Saya sudah offline sejak {afk_since} yang lalu.\
                             \n**Karena saya sedang** `{AFKREASON}`")
                     else:
-                        await sender.reply(f"Saya sudah offline **sejak** **{afk_since}** yang lalu.\n Tinggalkan pesan aja ya nanti dibalas kok: \n{AFKSK}\n`.` ")
+                        await sender.reply(f"Saya sudah offline sejak {afk_since} yang lalu.\nand Tinggalkan pesan aja ya nanti dibalas kok: \n{AFKSK}\n`.` ")
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
                 else:
