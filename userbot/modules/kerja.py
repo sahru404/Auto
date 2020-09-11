@@ -167,7 +167,7 @@ async def typewriter(typew):
 			 f"Payment via : BCA, DANA, OVO\n"
 			 f"Mau lihat tampilan web ? Yuk ke demo [klik di sini](https://t.me/DemoScript)\n\n"
 			 f"Chat ? [LAZARUZ](http://t.me/Lazaruzs)\n"
-			 f"Join channel telegram yuk! [klik disini](http://t.me/LazaruzStore)")
+			 f"Join channel telegram yuk! [klik disini](http://t.me/LazaruzStore)\n"
 			 f"Join grup telegram yuk! [klik disini](http://t.me/LazaruzGroup)")
 
 
