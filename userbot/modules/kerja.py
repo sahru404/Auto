@@ -126,6 +126,18 @@ async def typewriter(typew):
 			 f"MEDIUM : 100.000\n"
 			 f"EXTRA : 120.000\n"
 			 f"SUPER : 150.000\n"
+			 f"ADMIN HOST : 2000.000\n"
+			 f"Info Lebih Lanjut! [klik disini](http://t.me/LazaruzStore)")
+
+@register(outgoing=True, pattern='^.cpanel(?: |$)(.*)')
+async def typewriter(typew):
+	message = typew.pattern_match.group(0)
+	sleep(0)
+	await typew.edit("Daftar harga **M.WHM**\n"
+			 f"MINI : 15.000\n"
+			 f"MEDIUM : 20.000\n"
+			 f"EXTRA : 25.000\n"
+			 f"SUPER : 30.000\n"
 			 f"Info Lebih Lanjut! [klik disini](http://t.me/LazaruzStore)")
 
 
@@ -140,22 +152,23 @@ async def typewriter(typew):
 async def typewriter(typew):
 	message = typew.pattern_match.group(0)
 	sleep(0)
-	await typew.edit("Di proses ya, Mohon bersabar \n"
-			 f"Kunjungi Channelku! [klik disini](http://t.me/LazaruzStore)")
+	await typew.edit("Di proses ya, Mohon ditunggu dan bersabar\n"
+			 f"[#LazaBot](http://t.me/LazaruzStore)")
 
-@register(outgoing=True, pattern='^.jual(?: |$)(.*)')
+@register(outgoing=True, pattern='^.web(?: |$)(.*)')
 async def typewriter(typew):
 	message = typew.pattern_match.group(0)
 	sleep(0)
 	await typew.edit("OPEN WEBSITE PHISING\n"
 			f"M.WHM, WHM, CPANEL\n"
 			 f"\n\n`Send email lancar\nada SSL atau gembok ijo\nBisa request tampilan\nDan masih banyak lagi!!`\n\nHarga?\n\nDomain : Rp. 100.000 `Bisa Request Nama Web`\n"
-			 f"Domain : Rp. 70.000 `Tidak bisa request nama web alias yang nentuin penjual`\n"
+			 f"Domain : Rp. 80.000 `Tidak bisa request nama web alias yang nentuin penjual`\n"
 			 f"Subdomain : Rp. 20.000 `Tidak bisa request apapun kecuali request tampilan website`\n\n"
 			 f"Payment via : BCA, DANA, OVO\n"
 			 f"Mau lihat tampilan web ? Yuk ke demo [klik di sini](https://t.me/DemoScript)\n\n"
 			 f"Chat ? [LAZARUZ](http://t.me/Lazaruzs)\n"
 			 f"Join channel telegram yuk! [klik disini](http://t.me/LazaruzStore)")
+			 f"Join grup telegram yuk! [klik disini](http://t.me/LazaruzGroup)")
 
 
 @register(outgoing=True, pattern='^.demo(?: |$)(.*)')
