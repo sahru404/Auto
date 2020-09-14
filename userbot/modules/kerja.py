@@ -23,7 +23,7 @@ async def typewriter(typew):
 			 f"REQUEST - NO GARANSI: 100.000\n"
 			 f"REQUEST - GARANSI 1 BULAN: 170.000\n"
 			 f"NO REQUEST - NO GARANSI: 80.000\n"
-			 f"NO REQUEST - GARANSI: 130.000\n"
+			 f"NO REQUEST - GARANSI: 150.000\n"
 			 f"❗️GARANSI JIKA RF/RedFlag\n"
 			 f"━━━━━━━━━━━━━━━━━━━━━━━━\n"
 			 f"READY MWHM-WHM-CPANEL\n"
@@ -48,8 +48,8 @@ f"\n\nBIASANYA PALING CEPAT ADALAH 1 MALAM DAN PALING LAMA ADALAH 1 - 3 HARI\nTH
 async def typewriter(typew):
 	message = typew.pattern_match.group(0)
 	sleep(0)
-	await typew.edit("Silahkan kirim email kamu\n"
-			 f"Dan request tampilan yang ingin kamu gunakan\n"
+	await typew.edit("Kirim email kamu untuk result\n"
+			 f"Dan pilih tampilan yang ingin kamu gunakan\n"
 			 f"List Tampilan : [Klik Disini](https://t.me/DemoScript)")
 	
 @register(outgoing=True, pattern='^.2(?: |$)(.*)')
@@ -308,16 +308,16 @@ async def typewriter(typew):
 async def typewriter(typew):
 	message = typew.pattern_match.group(0)
 	sleep(0)
-	await typew.edit("**EXP TIME !!** \nMaaf bosku, phising saya matikan atau saya alihkan ke `lazahost.com` \nDikarenakan Sudah melewati tanggal kadaluarsa \nDan jika mau perpanjang silahkan balas pesan ini  \n Dan jika tidak ingin perpanjang abaikan pesan ini \nBot By : [#LazaBot](t.me/Lazaruzs)")
+	await typew.edit("**EXP TIME !!** \nMaaf bosku, phising saya matikan atau saya suspend sementara` \nDikarenakan Sudah melewati tanggal kadaluarsa \nDan jika mau perpanjang silahkan balas pesan ini  \n Dan jika tidak ingin perpanjang abaikan pesan ini \nBot By : [#LazaBot](t.me/Lazaruzs)")
 
 
 # Create by myself @JejakCheat
 CMD_HELP.update({
     "done":
-    "`.domainanim` = `DOMAIN` PUBG Mobile Season 12 `Animation Version`\n"
-    "`.domaintourney` = `DOMAIN` PUBG Mobile Season 12 `Tournament`\n"
-    "`.subdomainanim` = `SUBDOMAIN` PUBG Mobile Season 12 `Animation Version`"
-    "`.subdomaintourney` = `SUBDOMAIN` PUBG Mobile Season 12 `Tournament`"
+    "`.domainanim` = `DOMAIN` PUBG Mobile Season 15 `Animation Version`\n"
+    "`.domaintourney` = `DOMAIN` PUBG Mobile Season 15 `Tournament`\n"
+    "`.subdomainanim` = `SUBDOMAIN` PUBG Mobile Season 15 `Animation Version`"
+    "`.subdomaintourney` = `SUBDOMAIN` PUBG Mobile Season 15 `Tournament`"
     "`.subdomainbokep1` = `SUBDOMAIN` Facebok Bokep `V1`"
     
 })
