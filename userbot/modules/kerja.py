@@ -126,14 +126,14 @@ async def typewriter(typew):
 			 f"MEDIUM : 100.000\n"
 			 f"EXTRA : 120.000\n"
 			 f"SUPER : 150.000\n"
-			 f"ADMIN HOST : 2000.000\n"
+			 f"ADMIN HOST : 200.000\n"
 			 f"Info Lebih Lanjut! [klik disini](http://t.me/LazaruzStore)")
 
 @register(outgoing=True, pattern='^.cpanel(?: |$)(.*)')
 async def typewriter(typew):
 	message = typew.pattern_match.group(0)
 	sleep(0)
-	await typew.edit("Daftar harga **M.WHM**\n"
+	await typew.edit("Daftar harga **cPanel**\n"
 			 f"MINI : 15.000\n"
 			 f"MEDIUM : 20.000\n"
 			 f"EXTRA : 25.000\n"
@@ -161,8 +161,8 @@ async def typewriter(typew):
 	sleep(0)
 	await typew.edit("OPEN WEBSITE PHISING\n"
 			f"M.WHM, WHM, CPANEL\n"
-			 f"\n\n`Send email lancar\nada SSL atau gembok ijo\nBisa request tampilan\nDan masih banyak lagi!!`\n\nHarga?\n\nDomain : Rp. 100.000 `Bisa Request Nama Web`\n"
-			 f"Domain : Rp. 80.000 `Tidak bisa request nama web alias yang nentuin penjual`\n"
+			 f"\n\n`Send email lancar\nada SSL atau gembok ijo\nBisa request tampilan\nDan masih banyak lagi!!`\n\nHarga?\n\nDomain : Rp. 100.000 `Bisa Request Nama Web (NO GARANSI)`\n"
+			 f"Domain : Rp. 80.000 `Tidak bisa request nama web alias yang nentuin penjual (NO GARANSI)`\n"
 			 f"Subdomain : Rp. 20.000 `Tidak bisa request apapun kecuali request tampilan website`\n\n"
 			 f"Payment via : BCA, DANA, OVO\n"
 			 f"Mau lihat tampilan web ? Yuk ke demo [klik di sini](https://t.me/DemoScript)\n\n"
@@ -292,7 +292,7 @@ async def typewriter(typew):
 async def typewriter(typew):
 	message = typew.pattern_match.group(0)
 	sleep(0)
-	await typew.edit("`UPDATE HARGA HARI INI` \n\nDOMAIN : 100.000 (Bisa Request Nama Web)\nDOMAIN : 70.000 (Tidak bisa request nama web)\nSUBDOMAIN : 20.000 \n\nBot By : [#LazaBot](t.me/Lazaruzs)")
+	await typew.edit("`UPDATE HARGA HARI INI` \n\nDOMAIN : 100.000 (Bisa Request Nama Web)\nDOMAIN : 80.000 (Tidak bisa request nama web)\nSUBDOMAIN : 20.000 \n\nBot By : [#LazaBot](t.me/Lazaruzs)")
 
 
 # Create by myself @JejakCheat
